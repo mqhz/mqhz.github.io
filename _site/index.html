@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Test Page: Don't Panic</title>
+  
+  
+  <link rel="icon" href="/favicon.png">
   <meta charset="utf-8">
+  <meta name="viewport" content="width= device-width, initial-scale= 1">
+  <!--<link rel="stylesheet" href="/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">--><!--This is an old version of fontawesome-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
+  <link rel="stylesheet" href="/fonts/fontawesome-free-5.5.0-web/css/all.css">
   <link rel="stylesheet" href="/css/main.css">
   </head>
 
@@ -10,11 +16,24 @@
 
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
-<li><a href="#">Nav1</a></li>
-<li><a href="#">Nav2</a></li>
-<li><a href="#">Nav3</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+<a class="drop-trigger" href="/blog">BLOG</a>
+<ul class="drop-menu">
+  <li>Recent Posts</li>
+  
+      <li><a href="/2018/11/03/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2018/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
+
+<li><a href="/2018/11/03/title-of-second-post.html">Newest Post</a></li>
 
     </ul>
   </nav>
@@ -25,91 +44,38 @@
 </header>
 
 
+<div class="content-container">
+
+   <div class="home">
 
 <div class="full-hero hero-home">
+  <div class="hero-content">
 
-    <h1>I'm an h1</h1>
+      <h1>CODE DANGEROUSLY</h1>
 
       <ul class="social-list">
-      <li>
-        <a href="http://example.com/" class="social-link">Fb</a>
-      </li>
-      <li>
-        <a href="http://example.com/" class="social-link">Tw</a>
-      </li>
-      <li>
-        <a href="http://example.com/" class="social-link">Gh</a>
-      </li>
-    </ul>
+        <li>
+          <a href="https://facebook.com/learnenough" class="social-link">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/learnenough" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/learnenough" class="social-link">
+          <i class="fab fa-github"></i>
+          </a>
+        </li>
 
+      </ul>
     </div>
-
-    <h2>THE FOUNDERS</h2>
-<p>
-  Learn Enough to Be Dangerous was founded in 2015 by Michael Hartl, Lee Donahoe,
-  and Nick Merwin. We believe that the kind of technical sophistication taught by
-  the Learn Enough tutorials can benefit at least a billion people, and probably
-  more.
-</p>
-<p>Test paragraph</p>
-
-    <div class="bio-wrapper">
-    <div class="bio-box">
-      <img src="http://placekitten.com/g/306/306">
-      <h3>Michael Hartl</h3>
-      <a href="http://twitter.com/mhartl" class="social-link">Tw</a>
-      <div class="bio-copy">
-        <p>
-        Known for his dazzling charm, rapier wit, and unrivaled humility,
-        Michael is the creator of the
-        <a href="http://railstutorial.org/">Ruby on Rails
-        Tutorial</a> and principal author of the
-        <a href="https://learnenough.com/">
-        Learn Enough to Be Dangerous</a> introductory sequence. Michael
-        is also notorious as the founder of
-        <a href="http://tauday.com/">Tau Day</a> and author of
-        <a href="http://tauday.com/tau-manifesto"><em>The Tau
-        Manifesto</em></a>, but rumors that he's secretly a supervillain
-        are slightly exaggerated.
-      </p>
-      </div>
-    </div>
-    <div class="bio-box">
-      <img src="http://placekitten.com/g/306/306">
-      <h3>Lee Donahoe</h3>
-      <a href="https://twitter.com/leedonahoe" class="social-link">Tw</a>
-      <div class="bio-copy">
-      <p>
-        When he's not literally swimming with sharks or hunting powder stashes on
-        his snowboard, you can find Lee in front of his computer designing
-        interfaces, doing front-end development, or writing some of the
-        interface-related Learn Enough tutorials.
-      </p>
-      </div>
-    </div>
-    <div class="bio-box">
-      <img src="http://placekitten.com/g/306/306">
-      <h3>Nick Merwin</h3>
-      <a href="https://twitter.com/nickmerwin" class="social-link">Tw</a>
-      <div class="bio-copy">
-      <p>
-        You may have seen him shredding guitar live with Capital Cities on Jimmy
-        Kimmel, Conan, or The Ellen Show, but rest assured Nick is a true nerd at
-        heart. He's just as happy shredding well-spec'd lines of code from a tour
-        bus as he is from his kitchen table.
-    </p>
-     </div>
-    </div>
-    <div class="bio-box">
-      <img src="http://placekitten.com/g/306/306">
-      <h3>??</h3>
-      <div class="bio-copy">
-      <p>
-        The Future
-      </p>
-      </div>
-    </div>
-  </div>
+</div>
+<div class="home-callout">
+  <h1 class="callout-title">The Learn Enough Story</h1>
+  <div class="callout-copy">
 
     <p>
     Learn Enough to Be Dangerous is a leader in the movement to teach the
@@ -118,8 +84,6 @@
      skills" like guessing keyboard shortcuts, Googling error messages, and
     knowing when to just reboot the darn thing.
   </p>
-
-
 
     <p>
     We believe there are <strong>at least a billion people</strong> who can
@@ -130,7 +94,6 @@
   </p>
 
   <h3>Background</h3>
-
 
     <p>
     Learn Enough to Be Dangerous is an outgrowth of the
@@ -144,18 +107,131 @@
     Other related tutorials can be found at
     <a href="https://learnenough.com/">learnenough.com</a>.
   </p>
-<br>
+  </div>
+</div>
 
-<footer class="footer">
+<div class="home-section">
+  <h4>Most recent post</h4>
+  <div class="blog-posts">
+    <header class="post-header">
+      <h2>
+        <a href="/2018/11/03/title-of-second-post.html">
+        This is the title of the post</a>
+      </h2>
+      <div class="post-byline">
+        <img src="https://gravatar.com/avatar/b65522a6f3a6899705d119d7aa232a6d?s=150">
+        <a href="http://twitter.com/mhartl"
+        class="social-link"><i class="fab fa-twitter"></i></a>
+        by: Quayam Zaidi
+        <span> - November 03, 2018</span>
+      </div>
+    </header>
+    <div class="posts-image"
+    style="background-image:url(/images/large/slide1.jpg)"></div>
+    <p>Whenever I find myself growing grim about the mouth; whenever it is a damp,
+drizzly November in my soul; whenever I find myself involuntarily pausing
+before coffin warehouses, and bringing up the rear of every funeral I meet;
+and especially whenever my hypos get such an upper hand of me, that it
+requires a strong moral principle to prevent me from deliberately stepping
+into the street, and methodically knocking people’s hats off—then, I
+account it high time to get to sea as soon as I can. This is my substitute
+for pistol and ball.</p>
+
+
+  </div>
+</div>
+
+
+<div class="home-section">
+
+    <h2>THE FOUNDERS</h2>
+<p>
+  Learn Enough to Be Dangerous was founded in 2015 by Michael Hartl, Lee Donahoe,
+  and Nick Merwin. We believe that the kind of technical sophistication taught by
+  the Learn Enough tutorials can benefit at least a billion people, and probably
+  more.
+</p>
+
+    <div class="bio-wrapper">
+    <div class="bio-box">
+      <img src="http://placekitten.com/g/306/306">
+      <h3>Michael Hartl</h3>
+      <a href="http://twitter.com/mhartl" class="social-link">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <div class="bio-copy">
+        <p>
+        Known for his dazzling charm, rapier wit, and unrivaled humility,
+        Michael is the creator of the
+        <a href="http://railstutorial.org/">Ruby on Rails
+        Tutorial</a> and principal author of the
+        <a href="https://learnenough.com/">
+        Learn Enough to Be Dangerous</a> introductory sequence.
+        </p>
+
+        <p>
+        Michael is also notorious as the founder of
+        <a href="http://tauday.com/">Tau Day</a> and author of
+        <a href="http://tauday.com/tau-manifesto"><em>The Tau
+        Manifesto</em></a>, but rumors that he's secretly a supervillain
+        are slightly exaggerated.
+      </p>
+      </div>
+    </div>
+    <div class="bio-box">
+      <img src="http://placekitten.com/g/306/306">
+      <h3>Lee Donahoe</h3>
+      <a href="https://twitter.com/leedonahoe" class="social-link"><i class="fab fa-twitter"></i></a>
+      <div class="bio-copy">
+      <p>
+        When he's not literally swimming with sharks or hunting powder stashes on
+        his snowboard, you can find Lee in front of his computer designing
+        interfaces, doing front-end development, or writing some of the
+        interface-related Learn Enough tutorials.
+      </p>
+      </div>
+    </div>
+    <div class="bio-box">
+      <img src="http://placekitten.com/g/306/306">
+      <h3>Nick Merwin</h3>
+      <a href="https://twitter.com/nickmerwin" class="social-link"><i class="fab fa-twitter"></i></a>
+      <div class="bio-copy">
+      <p>
+        You may have seen him shredding guitar live with Capital Cities on Jimmy
+        Kimmel, Conan, or The Ellen Show, but rest assured Nick is a true nerd at
+        heart. He's just as happy shredding well-spec'd lines of code from a tour
+        bus as he is from his kitchen table.
+    </p>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+    <footer class="footer">
 <a href="/" class="footer-logo">
 <img src="/images/logo.png" alt="Learn Enough">
 </a>
 <nav>
   <ul class="footer-nav nav-links">
     <li><a href="/">Home</a></li>
-<li><a href="#">Nav1</a></li>
-<li><a href="#">Nav2</a></li>
-<li><a href="#">Nav3</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+<a class="drop-trigger" href="/blog">BLOG</a>
+<ul class="drop-menu">
+  <li>Recent Posts</li>
+  
+      <li><a href="/2018/11/03/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2018/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
+
+<li><a href="/2018/11/03/title-of-second-post.html">Newest Post</a></li>
 
   </ul>
 </nav>
